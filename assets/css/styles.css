@@ -6,6 +6,7 @@
   --color-muted: #ccc;
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 [data-theme="dark"] {
@@ -34,6 +35,10 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
+}
+
+body, body * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 header {
@@ -65,19 +70,6 @@ h1{
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
 }
-
-
-.nav-links a {
-  position: relative;
-  text-decoration: none;
-  color: var(--color-text);
-  font-weight: 500;
-  font-size: 0.95rem;
-  padding-bottom: 4px;
-}
-
-
-/* Desktop menu */
 
   .nav-links a {
   position: relative;
@@ -352,7 +344,7 @@ footer {
   gap: 0.5rem;
   align-items: center;
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   right: 1rem;
 }
 
@@ -387,24 +379,10 @@ footer {
     padding: 0.5rem 1rem;
   }
 
+
   h1 {
     font-size: 1.4rem;
     margin-bottom: 0.25rem;
-  }
-
-  .hero {
-    height: 75vh;
-    padding: 0;
-  }
-
-  .slideshow {
-    width: 100%;
-    aspect-ratio: auto;
-  }
-
-  .section-title {
-    margin: 60px 20px 40px 20px;
-    text-align: center;
   }
 
   #gallery {
@@ -419,13 +397,16 @@ footer {
   }
 
   .theme-toggle {
+    padding: 0.4rem;
     top: 0.5rem;
-    right: 0.5rem;
+    right: 0.2rem;
     font-size: 1rem;
   }
-}
-
-@media (max-width: 767px) {
+  .lang-toggle {
+    font-size: 0.85rem;
+    margin: 3rem  0 2rem ;
+    padding: 0.4rem;
+  }
   .hero {
     height: 60vh;
     padding: 0;
@@ -435,6 +416,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
 
   .slideshow {
     width: 100%;

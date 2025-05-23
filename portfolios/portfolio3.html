@@ -28,7 +28,7 @@
     <div class="header-container">
       <h1>Jon Doe</h1>
       <nav id="nav" class="nav-links" role="navigation">
-        <a href="../../index.html">HOME</a>
+        <a href="../index.html">HOME</a>
         <a href="#notes">NOTES</a>
         <a href="#contact">CONTACT</a>
       </nav>
@@ -46,7 +46,7 @@
   <!-- Hero -->
   <section class="hero-project">
     <h2 data-lang="en">Portfolio 3</h2>
-    <h2 data-lang="it" style="display:none">Titolo del progetto</h2>
+    <h2 data-lang="it" style="display:none">Portfolio 3 - ITA</h2>
     <p data-lang="en">A brief subtitle or context for this work</p>
     <p data-lang="it" style="display:none">Una breve descrizione per questo portfolio</p>
   </section>
@@ -112,27 +112,9 @@
     </div>
   </footer>
 
-  <!-- Lightbox Script -->
+  <!-- Lightbox Script and global Script-->
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script>
-    const lightbox = GLightbox({
-      selector: '.glightbox'
-    });
-    
-    /*language switch*/
-     const langBtn = document.getElementById("toggle-lang");
-  let currentLang = "en";
 
-  langBtn.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "it" : "en";
-    document.querySelectorAll("[data-lang]").forEach(el => {
-      el.style.display = el.getAttribute("data-lang") === currentLang ? "block" : "none";
-    });
-    langBtn.innerHTML = currentLang === "en" ? "ITA" : "ENG";
-  });
-  </script>
-
-  <!-- Global Scripts -->
   <script src="../assets/js/scripts.js" defer></script>
 
 </body>
