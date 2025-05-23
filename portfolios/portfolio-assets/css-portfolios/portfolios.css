@@ -1,8 +1,31 @@
 .hero-project{
   font-family: var(--font-serif);
+  letter-spacing: 1.5px;
   text-align: center;
   margin-top: 40px;
 }
+
+body.fade-lightbox {
+  transition: filter 0.4s ease;
+  filter: brightness(0.6);
+  transition: all 0.8s ease ;
+}
+body.glightbox-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+
+body.glightbox-open .glightbox-container {
+  top: 0;
+  transform: none;
+}
+
+body.glightbox-open .glightbox-container .gslide {
+  transition: all 0.6s ease-in-out;
+}
+
 
 .masonry-grid {
   column-count: 3;
@@ -17,6 +40,7 @@
   height: auto;
   display: block;
   border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 
@@ -24,6 +48,11 @@
   break-inside: avoid;
   display: block;
   margin-bottom: 12px;
+}
+
+.masonry-grid img:hover{
+  transform: scale(1.03);
+  filter: brightness(1.1);
 }
 
 
@@ -39,7 +68,7 @@ h3{
   padding: 0 2rem;
   font-size: 1rem;
   line-height: 1.6;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
 
 .project-navigation {

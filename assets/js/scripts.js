@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* slideshow */
   const slides = document.querySelectorAll(".slideshow img");
   let currentSlide = 0;
 
@@ -46,6 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
       langBtn.innerHTML = lang === "en" ? "ITA" : "ENG";
     };
 
+    const lightbox = GLightbox({
+  selector: '.glightbox',
+  loop: true,
+  touchNavigation: true,
+  keyboardNavigation: true,
+  openEffect: 'zoom',         
+  closeEffect: 'fade',
+  slideEffect: 'slide',    
+});
+
+
     switchLanguage(currentLang);
 
     langBtn.addEventListener("click", () => {
@@ -55,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  
   /* cookie banner */
   const banner = document.getElementById("cookie-banner");
   if (banner && !localStorage.getItem("cookiesAccepted")) {

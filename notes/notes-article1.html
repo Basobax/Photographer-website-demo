@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jon Doe | Photographer</title>
+  <title>Jon Doe | Notes</title>
   <meta name="description" content="Photographic Portfolio by Jon Doe: explore the series omissis.
 Discover insights and reflections in the Notes blog." />
   <meta name="author" content="Jon Doe" />
@@ -18,66 +18,56 @@ Discover insights and reflections in the Notes blog." />
   <meta property="og:url" content="" />-->
   <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="./notes css/notes.css">
   <link rel="icon" href="/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body oncontextmenu="return false">
-
   <header>
   <div class="header-container">
     <h1>Jon Doe</h1>
     <nav id="nav" class="nav-links" role="navigation">
-      <a href="#home" class="active">HOME</a>
-      <a href="#gallery">GALLERY</a>
-      <a href="./notes/notes.html">NOTES</a>
+      <a href="../index.html" class="active">HOME</a>
+      <a href="../index.html/#gallery">GALLERY</a>
+      <a href="./notes.html">NOTES</a>
       <a href="#contact">CONTACT</a>
     </nav>
     
-  </div>
+   <div class="header-controls">
+  <button id="toggle-lang" class="lang-toggle" aria-label="Cambia lingua">
+    <span>ITA</span>
+  </button>
   <button id="toggle-mode" class="theme-toggle" aria-label="Toggle dark mode">
-      <i class="ri-sun-fill"></i>
-    </button>
+    <i class="ri-sun-fill"></i>
+  </button>
+</div>
 </header>
 
+  <main class="note-content" style="max-width: 800px; margin: 3rem auto; padding: 1rem;">
+    <h1>Inside Portfolio 1: Inspirations and Process</h1>
+    <p><em>Published on May 10, 2025</em></p>
 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-  <section class="hero" id="home">
-  <div class="slideshow">
-    <img src="./assets/placeholderimg/annie-spratt-OETHwXjfCzQ-unsplash.jpg" alt="Hero 1" class="active">
-    <img src="./assets/placeholderimg/dario-jud-4EvreRzmq44-unsplash.jpg" alt="Hero 2">
-    <img src="./assets/placeholderimg/dario-jud-HXbAioPEVyQ-unsplash.jpg" alt="Hero 3">
-    <img src="./assets/placeholderimg/the-chaffins-m8rM-X6S54o-unsplash.jpg" alt="Hero 4">
-    <img src="./assets/placeholderimg/the-chaffins-syhIpeHdLdM-unsplash.jpg" alt="Hero 5">
-    <img src="./assets/placeholderimg/yuheng-ouyang-JIZXmgKvxHM-unsplash.jpg" alt="Hero 6">
-  </div>
-</section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+    <figure>
+      <img src="../assets/placeholderimg/dario-jud-HXbAioPEVyQ-unsplash.jpg" alt="Description" style="width:100%; margin: 1rem 0;">
+      <figcaption>A key image from Portfolio 1 – Image description</figcaption>
+    </figure>
 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <!--fix blockmode dark theme-->
+    <blockquote>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." – My motto for this series
+    </blockquote>
 
-  <div class="section-title">
-  <h2>Selected Works</h2>
-</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-
-  <section id="gallery">
-    <a href="./portfolios/portfolio1.html">
-      <img src="./assets/placeholderimg/yuheng-ouyang-JIZXmgKvxHM-unsplash.jpg" alt="#" loading="lazy">
-      <span class="caption">Portfolio 1</span>
-    </a>
-    <a href="./portfolios/portfolio2.html">
-      <img src="./assets/placeholderimg/the-chaffins-m8rM-X6S54o-unsplash.jpg" alt="#" loading="lazy">
-      <span class="caption">Portfolio 2</span>
-    </a>
-    <a href="./portfolios/portfolio3.html">
-      <img src="./assets/placeholderimg/dario-jud-HXbAioPEVyQ-unsplash.jpg" alt="#" loading="lazy">
-      <span class="caption">Portfolio 3</span>
-    </a>
     
-  </section>
-
-
+  </main>
 
   <footer>
     <section id="contact">
@@ -95,18 +85,6 @@ The Chaffins, Hameen Reynolds, Sarlate Laura Jevdokimava, Sergio Kian, Ingmar H<
          <a href="#">Terms of Use</a></p>
     </div>
   </footer>
-
-  <div id="cookie-banner" class="cookie-banner">
-    <div class="cookie-content">
-      <p>Questo sito utilizza cookie tecnici e, previo tuo consenso, cookie analitici per migliorare l'esperienza utente. 
-      <a href="/cookie-policy">More</a></p>
-      <div class="cookie-buttons">
-      <button onclick="acceptCookies()">Accetta</button>
-      <button onclick="rejectCookies()">Rifiuta</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="./assets/js/scripts.js" defer></script>
+  <script src="../assets/js/scripts.js" defer></script>
 </body>
 </html>
