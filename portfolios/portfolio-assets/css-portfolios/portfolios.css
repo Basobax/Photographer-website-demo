@@ -1,0 +1,78 @@
+.hero-project{
+  font-family: var(--font-serif);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 16px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.masonry-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+.masonry-grid a {
+  break-inside: avoid;
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+h3{
+  font-family: var(--font-serif);
+  letter-spacing: 1px;
+  text-align:center;
+  margin-bottom: 50px;
+}
+.project-description {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: var(--font-serif);
+}
+
+.project-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  font-size:large;
+  font-weight: bolder;
+}
+
+.nav-arrow {
+  font-family: var(--font-serif);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bolder;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.nav-arrow:hover{
+  color: #555;
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
