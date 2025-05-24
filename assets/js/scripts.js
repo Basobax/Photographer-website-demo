@@ -45,17 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
       langBtn.innerHTML = lang === "en" ? "ITA" : "ENG";
     };
 
-    const lightbox = GLightbox({
-  selector: '.glightbox',
-  loop: true,
-  touchNavigation: true,
-  keyboardNavigation: true,
-  openEffect: 'zoom',         
-  closeEffect: 'fade',
-  slideEffect: 'slide',    
-});
-
-
     switchLanguage(currentLang);
 
     langBtn.addEventListener("click", () => {
@@ -65,6 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+   const lightbox = GLightbox({
+  selector: '.glightbox',
+  loop: true,
+  touchNavigation: true,
+  keyboardNavigation: true,
+  openEffect: 'zoom',         
+  closeEffect: 'fade',
+  slideEffect: 'slide',    
+});
   
   /* cookie banner */
   const banner = document.getElementById("cookie-banner");

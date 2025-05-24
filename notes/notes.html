@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notes</title>
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="stylesheet" href="./notes-css/notes.css" />
+  <title>Jon Doe | Notes</title>
+  <meta name="description" content="Photographic Portfolio by Jon Doe: explore the series omissis.
+Discover insights and reflections in the Notes blog." />
+  <meta name="author" content="Jon Doe" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="fotografia, photography, landscape, seascape, black and white, digital photography, omissis, portfolio fotografico, paesaggi, fotografia d'autore" />
+
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jon Doe | Photographer" />
+  <meta property="og:description" content="Explore Jon Doe's photographic works" />
+  <!--<meta property="og:image" content="" />
+  <meta property="og:url" content="" />-->
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="./notes-css/notes.css">
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
     <body oncontextmenu="return false">
   <header>
     <div class="header-container">
       <h1>Jon Doe</h1>
       <nav id="nav" class="nav-links" role="navigation">
         <a href="../index.html">HOME</a>
-        <a href="./notes.html" class="active" >NOTES</a>
+        <a href="../index.html" >GALLERY</a>
         <a href="#contact">CONTACT</a>
       </nav>
     </div>
@@ -27,26 +43,40 @@
   </button>
 </div>
   </header>
+
+  <div class="notes-hero">
+    <img src="../assets/placeholderimg/dario-jud-4EvreRzmq44-unsplash.jpg" alt="Describing hero image">
+    <span class="hero-text">
+      <p data-lang="en"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</em></p>
+    <p data-lang="it" style="display:none" ><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</em></p>
+    </span>
+  </div>
   <main class="note-content">
     <h1>Notes</h1>
-    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</em></p>
+
 
     <ul class="notes-list">
-      <li>
-        <a href="./notes-article1.html"><strong>Lorem ipsum</strong></a><br />
-        <small>12 maggio 2024</small>
-      </li>
-      <li>
-        <a href="./notes-article1.html"><strong>dolor sit amet</strong></a><br />
-        <small>3 marzo 2024</small>
-      </li>
-      <li>
-        <a href="./notes-article1.html"><strong>Libri letti (e da leggere)</strong></a><br />
-        <small>28 gennaio 2024</small>
-      </li>
-    </ul>
+  <li>
+    <a href="./notes-article1.html">
+      <span data-lang="en"><strong>Lorem ipsum</strong><br/><small>May 12, 2025</small></span>
+      <span data-lang="it" style="display:none"><strong>Lorem ipsum in italiano</strong><br/><small>12 Maggio 2025</small></span>
+    </a>
+  </li>
+  <li>
+    <a href="./notes-article1.html">
+      <span data-lang="en"><strong>Dolor sit amet</strong><br/><small>May 12, 2025</small></span>
+      <span data-lang="it" style="display:none"><strong>Dolor sit amet in italiano</strong><br/><small>12 Maggio 2025</small></span>
+    </a>
+  </li>
+  <li>
+    <a href="./notes-article1.html">
+      <span data-lang="en"><strong>Books I've read (and want to read)</strong><br/><small>May 12, 2025</small></span>
+      <span data-lang="it" style="display:none"><strong>Libri letti (e da leggere)</strong><br/><small>12 Maggio 2025</small></span>
+    </a>
+  </li>
+</ul>
     <footer>
-    <section id="contact">
+     <section id="contact">
     <div class="social-icons">
         <a href="mailto:fakemail@gmail.com" target="_blank" aria-label="Email a Jon Doe"><i class="ri-mail-fill"></i></a>
         <a href="https://instagram.com" target="_blank" aria-label="Profilo Instagram di Jon Doe"><i class="ri-instagram-fill"></i></a>

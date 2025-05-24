@@ -6,14 +6,34 @@ main.note-content {
   padding: 0 1.5rem;
 }
 
+.notes-hero {
+  position: relative;
+  text-align: center;
+}
+.notes-hero img {
+  margin: 20px 0;
+  width:100vw;
+  height: 70vh;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.hero-text {
+  font-size: larger;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-weight: normal;
+  
 }
 
 em {
-  color: #777;
+  color: var(--color-accent);
   font-size: 0.95rem;
 }
 
@@ -22,20 +42,12 @@ p {
 }
 
 a {
-  color: #000;
+  color: var(--color-text);
   text-decoration: underline;
 }
 
 a:hover {
   opacity: 0.7;
-}
-
-blockquote {
-  margin: 2rem 0;
-  padding: 1rem 1.5rem;
-  border-left: 3px solid #ccc;
-  font-style: italic;
-  background-color: #f9f9f9;
 }
 
 figure {
@@ -45,7 +57,7 @@ figure {
 figcaption {
   text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-accent);
   margin-top: 0.5rem;
 }
 
@@ -61,7 +73,7 @@ figcaption {
 
 .notes-list a {
   font-size: 1.25rem;
-  color: #000;
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -70,7 +82,7 @@ figcaption {
 }
 
 .notes-list small {
-  color: #666;
+  color: var(--color-accent);
   font-size: 0.9rem;
 }
  
