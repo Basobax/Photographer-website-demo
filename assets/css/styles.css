@@ -184,37 +184,52 @@ h1{
 #gallery a {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-decoration: none;
+  height: 100%;
+  transition: transform 0.3s ease;
+  overflow: visible;
+}
+
+#gallery .img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3; 
+  border-radius: 8px;
+  overflow: visible;
 }
 
 #gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
-#gallery img:hover {
-  transform: scale(1.02);
+#gallery a:hover {
+  transform: translateY(-5px);
+}
+
+#gallery a:hover img {
+  transform: scale(1.05);
 }
 
 .caption {
   margin-top: 1rem;
+  padding: 0 0.5rem;
   font-family: var(--font-serif);
   font-size: 1.1rem;
   text-align: center;
-  text-decoration: none;
   color: var(--color-text);
   letter-spacing: 1.5px;
+  line-height: 1.4;
 }
 
 /* Responsive Grid */
 @media (min-width: 768px) {
   #gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 immagini in una riga */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     padding: 2rem 4rem;
   }
