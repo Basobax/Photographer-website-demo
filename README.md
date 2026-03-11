@@ -2,7 +2,7 @@ DEMO PHOTOGRAPHER WEBSITE
 
 For this project I used only: HTML5, CSS3, JavaScript.
 
-LIVE DEMO: https://basobax.github.io/Photographer-website-demo/
+LIVE DEMO: https://basiliocongiu.github.io/Photographer-website-demo/
 
 PORTFOLIO PAGES
 
