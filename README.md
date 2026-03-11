@@ -2,9 +2,6 @@ DEMO PHOTOGRAPHER WEBSITE
 
 For this project I used only: HTML5, CSS3, JavaScript.
 
-Status: Work in Progress (final adjustments ongoing). 
-Certain parts, like the cookie banner, are still in Italian but will be translated soon.
-
 LIVE DEMO: https://basobax.github.io/Photographer-website-demo/
 
 PORTFOLIO PAGES
@@ -15,9 +12,9 @@ The project now includes dedicated portfolio pages featuring:
 
 A language switcher button has also been added to the site, allowing users to toggle between supported languages. 
 
-⚠️ Note: This button has been intentionally omitted from the homepage, as it contains no significant translatable content.
+Note: This button has been intentionally omitted from the homepage, as it contains no significant translatable       content.
       - Unoptimized images are causing performance lag in the lightbox and across the entire website.
-          - Compressing/resizing the images should resolve these performance issues.
+      - Compressing/resizing the images should resolve these performance issues.
 
 NOTE PAGES
 
@@ -40,7 +37,7 @@ This setup allows for:
 - Clean removal of individual portfolios without leaving residual files
 
 
-⚠️ Note: The photos and contact information are placeholders for privacy reasons. The actual website contains protected content.
+Note: The photos and contact information are placeholders for privacy reasons. The actual website contains protected content.
 The images used were downloaded from Unsplash. Photo credits go to:
 
 Yuheng Ouyang
